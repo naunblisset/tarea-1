@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naun Blisset</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--HEADER SECTION-->
+
+    <header>
+        <a href="#home" class="naun">Naun Blisset</a>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#portafolio">PORTAFOLIO</a></li>
+            <li><a href="#contacto">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <!--END HEADER SECTION-->
+
+
+    <!--HERO SECTION-->
+
+    <body>
+        <div class="hero" id="home">
+            <div class="foto-naun">
+                <div class="texto-about">
+                    <h2>Hola soy <span>Naun</span> Blisset</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore odit eveniet deserunt cumque
+                        suscipit quibusdam facere, accusantium minus alias fugiat recusandae earum ea tenetur
+                        distinctio, officiis laudantium magnam qui esse ut rerum quis illo excepturi perferendis quasi?
+                        Alias temporibus impedit repudiandae vitae nostrum aspernatur iusto officiis, illo ducimus,
+                        necessitatibus accusantium?</p>
+                </div>
+                <img src="./IMG/retrato.jpg" alt="" class="naun-foto">
+            </div>
+        </div>
+
+        <!--END OF HERO SECTION-->
+
+
+        <!--PORTAFOLIO SECTION-->
+
+        <div class="identificador" id="portafolio"></div>
+        <div class="portafolio">
+            <div class="portaflio-headlings">
+                <h2>PORTAFOLIO</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                    <div class="card_img">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project 1</h2>
+                    </div>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <div class="proyects-details-content">
+                        <button class="project-details">
+                            <a href="#">Project Details</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project 2</h2>
+                    </div>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <div class="proyects-details-content">
+                        <button class="project-details">
+                            <a href="#">Project Details</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_img">
+                    </div>
+                    <div class="card_title">
+                        <h2>Project 3</h2>
+                    </div>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <div class="proyects-details-content">
+                        <button class="project-details">
+                            <a href="#">Project Details</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END OF PORTAFOLIO SECTION-->
+
+
+        <!--CONTACT SECTION-->
+        <div class="container" id="contacto">
+            <div class="item">
+                <div class="submit-form">
+                    <h4 class="text">CONTACT ME</h4>
+                    <form action="">
+                        <div class="input-box">
+                            <input type="text" class="input" required>
+                            <label for="">NAME</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="input" required>
+                            <label for="">EMAIL</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" class="input" required>
+                            <label for="">PHONE</label>
+                        </div>
+                        <div class="input-box">
+                            <textarea name="" class="input" required id="message" cols="30" rows="10"></textarea>
+                            <label for="">MESSAGE</label>
+                        </div>
+                        <input type="submit" class="btn" value="SUBMIT">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!--END OF CONTACT SECTION-->
+
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <div class="footer-content">
+                <h3>Naun Blisset</h3>
+                <p>__________________________________________________________________________________________________________________________
+                </p>
+                <ul class="socials2">
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 Naun Blisset. designed by <span>paranoid studios</span></p>
+            </div>
+        </footer>
+        <!--END OF FOOTER SECTION-->
+
+
+        <!--SCRIPT SECTION-->
+
+        <section class="nav"></section>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+
+        <!--END OF SCRIPT SECTION-->
+    </body>
+
+</html>
